@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+            <h2>Intrainz Calculator</h2>
+        <section class="mt-5">
+        <div class="functions">
+            <h3>Functions Included</h3>
+            <ul>
+                <li>Light Mode/Dark Mode</li>
+                <li>
+                    Basic Maths Calculations
+                    <ol>
+                        <li>(+) -> Addition</li>
+                        <li>(-) -> Subtraction</li>
+                        <li>(x) -> Multiplication</li>
+                        <li>(&divide;) -> Division</li>
+                        <li>(%) -> Modulo</li>
+                    </ol>
+                </li>
+                <li>(.) operator for decimal operations</li>
+                <li>Square of a number</li>
+            </ul>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control inputCal" placeholder="0" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>              
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="1" onclick="inputBtn('1')">1</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="2" onclick="inputBtn('2')">2</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="3" onclick="inputBtn('3')">3</button>
+                        </div>
+                        <div class="col-3 plus" value="+">
+                            <button type="button" class="btn oper" onclick="inputBtn('+')">+</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="4" onclick="inputBtn('4')">4</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="5" onclick="inputBtn('5')">5</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="6" onclick="inputBtn('6')">6</button>
+                        </div>
+                        <div class="col-3 minus">
+                            <button type="button" class="btn oper" value="-" onclick="inputBtn('-')">-</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn" value="7" onclick="inputBtn('7')">7</button>
+                        </div>
+                        <div class="col-3 ">
+                            <button type="button" class="btn" value="8" onclick="inputBtn('8')">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn" value="9" onclick="inputBtn('9')">9</button>
+                        </div>
+                        <div class="col-3 mul">
+                            <button type="button" class="btn oper" value="*" onclick="inputBtn('*')">&times;</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="button zero" class="btn" value="0" onclick="inputBtn('0')">0</button>
+                        </div>
+                        <div class="col-3 dot">
+                            <button type="button" class="btn other" value="." onclick="inputBtn('.')">.</button>
+                        </div>
+                        <div class="col-3 div">
+                            <button type="button" class="btn oper" value="/" onclick="inputBtn('/')">&divide;</button>
+                        </div>
+                        <div class="col-3 light">
+                            <button type="button" class="btn lida">LM</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 equals">
+                            <button type="button" class="btn equals" value="=">=</button>
+                        </div>
+                        <div class="col-3 clr">
+                            <button type="button" class="btn clearAll" value="ac">AC</button>
+                        </div>
+                        <div class="col-3 mod">
+                            <button type="button" class="btn oper" value="%" onclick="inputBtn('%')">%</button>
+                        </div>
+                        <div class="col-3 dark">
+                            <button type="button" class="btn squareNo">x<sup>2</sup></button>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
