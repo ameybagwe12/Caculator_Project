@@ -19,7 +19,7 @@ clearBtn.onclick = () => {
 
 squareBtn = document.querySelector(".squareNo");
 squareBtn.onclick = () => {
-    inpCal.value = String(parseInt(inpCal.value)*parseInt(inpCal.value));
+    inpCal.value = String(Math.pow(parseInt(inpCal.value) , 2));
 }
 
 mode = document.querySelector(".lida");
