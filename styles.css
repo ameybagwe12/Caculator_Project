@@ -78,3 +78,16 @@ section {
     background-color: aliceblue;
     color: black;
 }
+
+@media(max-width:900px){
+    .section{
+        flex-direction: column;
+    }
+    .card {
+        margin-left: 14%;
+    }
+    /* .functions {
+        display: flex;
+        justify-content: center;
+    } */
+}
