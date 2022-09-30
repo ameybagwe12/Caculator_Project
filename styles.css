@@ -85,9 +85,9 @@ section {
     }
     .card {
         margin-left: 14%;
+        margin-bottom: 20px;
     }
     /* .functions {
-        display: flex;
-        justify-content: center;
+        
     } */
 }
