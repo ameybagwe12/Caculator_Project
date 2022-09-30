@@ -87,7 +87,8 @@ section {
         margin-left: 14%;
         margin-bottom: 20px;
     }
-    /* .functions {
-        
-    } */
+    .functions {
+       display: flex;
+       justify-content: flex-end; 
+    }
 }
